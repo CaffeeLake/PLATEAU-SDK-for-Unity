@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>3D&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12452;&#12531;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="3D&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12452;&#12531;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="3d都市モデルのインポート">3D都市モデルのインポート</h1>
+
+<p>このページでは、都市データをUnityプロジェクトにインポートする手順を説明します。</p>
+<h2 id="準備">準備</h2>
+<ul>
+<li>PLATEAU SDK for Unityを導入したUnityプロジェクトを用意します。<br>SDKの導入方法は <a href="Installation.html">インストール</a> を参照してください。</li>
+</ul>
+<h2 id="インポート手順">インポート手順</h2>
+<h3 id="インポート元の選択">インポート元の選択</h3>
+<ul>
+<li>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に4つのタブ「インポート、モデル調整、エクスポート、属性情報」があります。<br>このうちインポートを選択します。
+<img src="../resources/manual/importCityModels/plateauWindowImport.png" alt=""></li>
+<li>インポート元で<code>ローカル</code>または<code>サーバー</code>を選択します。</li>
+</ul>
+<h4 id="ローカルからインポートする場合">ローカルからインポートする場合</h4>
+<ul>
+<li>導入したい都市データが自分のコンピュータにある場合はローカルを選択します。<br>3D都市モデルは <a href="https://www.geospatial.jp/ckan/dataset/plateau">G空間情報センターのPLATEAUポータルサイト</a> からダウンロードできます。<br>CityGML形式のものをダウンロードしてください。<ul>
+<li><code>参照</code>ボタンを押します。都市データのフォルダの選択画面が表示されます。</li>
+<li>都市データのフォルダの中には、<code>udx</code>,<code>codelists</code>という名前のフォルダがあるはずです。<br><code>udx</code>から<strong>階層が1つ上</strong>のフォルダを選択します。</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><strong>CityGMLのバージョン</strong><br>G空間情報センターのWebサイトからダウンロードできるCityGMLについて、複数のバージョンが掲載されている場合があります(v3とv2があるなど)。<br>2026年3月現在は、最新のv4に対応しています。今後に新しいバージョンが出た際には対応していく予定です。</p>
+</div>
+<h4 id="サーバーからインポートする場合">サーバーからインポートする場合</h4>
+<ul>
+<li><p><code>サーバー</code>では、PLATEAUのデータサーバーから直接 都市データをインポートできます。</p>
+<ul>
+<li><p><code>接続先設定</code>を開くことができますが、設定しなくとも自動でデフォルトのURLに接続されます。<br>別のURLに接続したい場合のみ、URLを入力して「再接続」ボタンを押してください。<br><code>認証トークン</code> は Bearer認証のトークンです。  </p>
+<p><img src="../resources/manual/importCityModels/importServer.png" alt=""></p>
+</li>
+<li><code>データセットの選択</code>で<code>都道府県</code>を選択します。</li>
+<li>するとその都道府県に対応する <code>データセット</code>が選択肢に出てくるので選びます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="インポート形式の選択">インポート形式の選択</h3>
+<p>インポート形式を次から選択します。</p>
+<ul>
+<li><code>シーンに配置</code><ul>
+<li>インポートした都市モデルを現在のシーンに直接配置します。  </li>
+</ul>
+</li>
+<li><code>動的タイル（Addressables出力）</code><ul>
+<li>広大な範囲を表示したいとき、描画負荷を抑えつつ表示できる機能です。 </li>
+<li>広範囲の描画に耐えるよう、3D都市モデルを最適化しながらタイル状に出力し、カメラの距離に応じて読み込む機能です。</li>
+<li>詳しくは<a href="dynamicTile.html">動的タイル機能について</a>をご覧ください。</li>
+</ul>
+</li>
+</ul>
+<h3 id="基準座標系の選択">基準座標系の選択</h3>
+<p>リストのうち、都市が属する場所として近いものを選択します。<br><img src="../resources/manual/importCityModels/coordinateSystemSelect.png" alt=""><br>適切なものを選ぶと座標の誤差が小さくなります。<br>ここで選択する座標系は国土交通省が定める平面直角座標系に準拠しています。<br>詳しくは <a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">国土地理院のWebサイト「わかりやすい平面直角座標系」</a> をご覧ください。</p>
+<h3 id="インポート範囲の選択">インポート範囲の選択</h3>
+<ul>
+<li><code>範囲選択</code>ボタンを押します。</li>
+<li>現在のUnityシーンに変更がある場合、変更を保存するかどうかを尋ねるダイアログが表示されます。<br><code>Save</code> または <code>Don&#39;t Save</code> をクリックします。
+<img src="../resources/manual/importCityModels/sceneSaveDialogue.png" alt=""></li>
+<li>シーンビューの表示が切り替わり、範囲選択画面になります。
+<img src="../resources/manual/importCityModels/areaSelectWindow.png" alt="">  </li>
+<li>範囲選択画面の操作方法<ul>
+<li>マウスホイールを上下に回してズームアウト、ズームインします。</li>
+<li>マウスホイールを押し込んだままドラッグしてカメラ移動します。</li>
+<li>範囲の選択方法については、画面右下に説明があるとおり、<ul>
+<li>クリックで選択/選択解除</li>
+<li>ドラッグで矩形での選択追加</li>
+<li>Shift+ドラッグで矩形での選択除外をします。</li>
+</ul>
+</li>
+<li>シーンビュー左上の<code>決定</code>ボタンを押して範囲を確定します。すると元のシーンに戻ります。</li>
+</ul>
+</li>
+<li>画面のみかた<ul>
+<li>青色の線は利用可能な地域を示します。</li>
+<li>地域ごとに利用可能なGML種別と対応LODがアイコン形式で表示されます。<ul>
+<li>対応LODは色で表現されます。画面左下の凡例の色と対応します。</li>
+</ul>
+</li>
+<li>アイコンが多すぎると感じる場合は、画面左下の凡例のチェックを切り替えることでアイコンの表示/非表示をLODごとに切り替えることができます。</li>
+<li>地図は国土地理院のサイトから自動でダウンロードされて表示されます。</li>
+<li>区域に表示される番号は、後述の<code>indexmap.pdf</code> に記載の番号と同じです。</li>
+</ul>
+</li>
+<li>メッシュコード検索機能<ul>
+<li>シーンビュー左上の<code>メッシュコード検索</code>ボタンを押すと、メッシュコードの番号（地図上で青色で表示される数字）で検索できます。</li>
+<li>番号を入力してOKボタンを押すと、その範囲に視界が移動します。</li>
+</ul>
+</li>
+</ul>
+<p><img src="../resources/manual/importCityModels/searchByMeshCode.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p><strong>インポートにはインターネット接続が必要です</strong><br>範囲選択画面の地図を表示するために、次のドメインにアクセスできる必要があります。
+<code>https://cyberjapandata.gsi.go.jp</code><br>また、サーバーインポートでデータを取得するためには、次のドメインにアクセスできる必要があります。<br><code>https://api.plateau.reearth.io</code><br>プロキシでの接続には対応しておりません。</p>
+</div>
+<div class="NOTE"><h5>Note</h5><p>範囲選択画面では、通常はガイド線が格子状に並び、地図は隙間無く表示されます。<br>しかし、座標系の選択を誤ると、下図のようにガイド線の配置が歪み、地図に隙間ができます。
+<img src="../resources/manual/importCityModels/invalidCoordinateSystem.png" alt="">
+これは誤った座標系を選択したことによる座標計算の誤差が可視化されたものです。<br>球体の地球を平面の地図で表現する都合上、基準座標点から離れるほど座標計算の誤差は大きくなります。</p>
+</div>
+<ul>
+<li>範囲選択が完了すると、<code>範囲選択</code> ボタンの下に <code>範囲選択:セット済</code> という表示がなされ、<br>その下に<code>地物別設定</code> が表示されるようになります。<br><img src="../resources/manual/importCityModels/areaSelected.png" alt=""></li>
+<li><strong>補足</strong>:<br>地域の区分を確認したい時は、ローカルにダウンロードしたフォルダに付属している <code>indexmap</code> という名前のpdfファイルをご覧ください。<br>下図のように地図上に区分が記載されています。
+<img src="../resources/manual/importCityModels/idmap.png" alt=""></li>
+</ul>
+<h3 id="地物別設定">地物別設定</h3>
+<p>地物の種類ごとにインポートに関する設定を行います。<br><img src="../resources/manual/importCityModels/importPerPackageConfig.png" alt="">  </p>
+<h4 id="設定項目について">設定項目について:</h4>
+<ul>
+<li><code>一括設定</code><ul>
+<li>複数の地物タイプをまとめて設定したい場合に編集してください。 </li>
+<li>地物タイプごとの設定で「一括設定と同じ」を選択したときに、この設定が適用されます。</li>
+<li>「一括設定と同じ」のチェックを外したときは、一括設定にかかわらず、個別に設定を上書きするためのメニューが表示されます。</li>
+<li>各設定の意味については後述します。</li>
+</ul>
+</li>
+<li><code>インポートする</code><ul>
+<li>チェックが付いている地物タイプのみインポートします。</li>
+</ul>
+</li>
+<li><code>テクスチャを含める</code><ul>
+<li>テクスチャが存在する地物タイプで表示される設定項目です。<br>チェックが付いていて、かつテクスチャがある場合はそれを含めてインポートします。<br>都市データによってはテクスチャがない場合があり、<br>その場合はチェックを外した時と同様にデフォルトマテリアルが適用されます。</li>
+</ul>
+</li>
+<li><code>テクスチャを結合する</code><ul>
+<li>テクスチャを含める場合、テクスチャを結合するかしないかを設定します。</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><strong>テクスチャ結合すると描画負荷が良くなります</strong>  </p>
+<p>PLATEAUのデータはテクスチャの枚数が多い傾向にあり、<br>結合しないと描画負荷が高くなる傾向にあります。   </p>
+<p>結合機能を有効にすると、複数のテクスチャを1枚の画像にまとめ、<br>3DモデルのUVも合わせて調整されます。<br>それによって描画負荷を改善できます。  </p>
+<p>例えば、新宿区の2km×2kmのデータについて<br>テクスチャ結合して4096×4096のテクスチャサイズにまとめたとき、<br>ドローコール数は4160から483に向上し、<br>あるPCではFPSが70から90に向上しました。</p>
+</div>
+<ul>
+<li><code>テクスチャ解像度</code><ul>
+<li>テクスチャを結合する場合の、結合後のテクスチャの大きさを指定します。</li>
+</ul>
+</li>
+<li><code>Mesh Collider をセットする</code><ul>
+<li>チェックが付いている場合、各モデルに Mesh Colliderが追加されます。</li>
+<li>インポート後、クリックで属性情報を表示する機能を利用する場合、Mesh Colliderが必要です。</li>
+</ul>
+</li>
+<li><code>LOD描画設定</code><ul>
+<li>複数のLODを利用可能な地物タイプで表示される設定項目です。<br>バーの左端と右端をドラッグして、インポートするLODの範囲を指定できます。</li>
+</ul>
+</li>
+<li><code>モデル結合</code><ul>
+<li><code>主要地物単位（建築物,道路等）</code><ul>
+<li>モデルのメッシュは建物ごとに結合されて出力されます。</li>
+<li>建物ごとに地物データを取得できるようにしたい場合はこちらを選択します。</li>
+</ul>
+</li>
+<li><code>最小地物単位（壁面,屋根面等）</code><ul>
+<li>屋根、壁単位など非常に細かくオブジェクトを分けたい場合はこちらを選択します。</li>
+</ul>
+</li>
+<li><code>地域単位</code><ul>
+<li>モデルのメッシュは結合されて出力されます。</li>
+<li>オブジェクト数を削減して軽量化できますが、建物ごとの地物データは取得不可になります。</li>
+<li>メッシュの結合はある程度の大きさの範囲ごとに行われます。</li>
+<li>地域単位でインポートする場合、見た目が同じマテリアルは結合されます。すなわち、色などの数値情報とテクスチャパスが同じ場合に結合されます。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><strong>LODとは</strong><br>gmlファイルの中には、都市モデルの形状の細かさを指定したいという需要に対応するため、<br>複数の形状データが格納されている場合があります。<br>LOD0がもっとも大雑把な形状で、LOD1, LOD2 と数字が上がるほど細かい形状になります。<br>建築物の場合、LOD0 は平面、LOD1は平面に一定の高さを付けたもの、LOD2はより細かい形状です。</p>
+<p>なお、ここでいう LOD とは PLATEAU の仕様上の LOD を指します。<br>Unity の機能としての LOD とは異なる概念です。</p>
+</div>
+<ul>
+<li><code>属性情報を含める</code><ul>
+<li>有効化すると、地物の属性情報がシーン中にコンポーネントで保存されます。</li>
+<li>下図のように、PLATEAUCityObjectGroupコンポーネント内で属性情報が保持されます。
+<img src="../resources/manual/importCityModels/plateauCityObjectGroupComponent.png" alt=""></li>
+</ul>
+</li>
+<li><code>デフォルトマテリアル</code><ul>
+<li>PLATEAUの3Dモデルのうち、テクスチャやマテリアル指定がない箇所のマテリアルを指定します。</li>
+<li>デフォルトでは、地物タイプに応じたマテリアルが指定されています。</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><strong>地物の選択について</strong><br>地物の中にはインポートに時間がかかるものがあります。<br>特に土地起伏、土地利用はデータ容量が重く処理に時間がかかるのでご注意ください。</p>
+</div>
+<div class="NOTE"><h5>Note</h5><p><strong>現実の景観と異なる地物について</strong><br>地物の種類で「土地利用」と「災害リスク」については、<br>情報の範囲を示す目印として板状の3Dモデルが表示されます。<br>土地利用と災害リスクに関するデータが不要な場合は<br>インポートしないか、インポート後オフにすることを推奨します。
+<img src="../resources/manual/importCityModels/fldAndLandUse.png" alt=""><br>上図で赤い格子模様になっている板は、災害リスク範囲の目印です。</p>
+</div>
+<div class="NOTE"><h5>Note</h5><p><strong>道路の高さについて</strong><br>LOD1,LOD2 の道路は、PLATEAUの仕様上、高さのデータを含みません。<br>したがって、インポートするとすべて高さ 0 で表現されます。<br>LOD3 以上の道路は高さが反映されます。</p>
+</div>
+<h3 id="土地に衛星写真や地図を貼り付ける">土地に衛星写真や地図を貼り付ける</h3>
+<p>土地に衛星写真や地図を貼り付けることができます。</p>
+<p><img src="../resources/manual/importCityModels/landPhotoSample.png" alt=""></p>
+<h4 id="設定方法">設定方法</h4>
+<ul>
+<li>範囲選択画面で土地起伏の3Dモデルが存在する地域を選択すると、インポート設定に「土地起伏」が表示されます。
+<img src="../resources/manual/importCityModels/landConfig.png" alt=""></li>
+<li>土地起伏では、上述の地物別設定に加えて土地起伏専用の設定項目があります。</li>
+<li><code>航空写真または地図を貼り付け</code><ul>
+<li>チェックがONになっていると機能が有効化されます。</li>
+</ul>
+</li>
+<li><code>URL</code><ul>
+<li>航空写真または地図の画像をダウンロードするためのURLです。</li>
+<li>デフォルトでは地理院地図の航空写真のURLが入力されています。</li>
+<li>このURLを変更すれば、航空写真だけでなく、国土地理院が提供している多種多様な地図や写真を土地に貼り付けることができます。<br>利用できる地図については<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院のページ</a>を参照してください。<br>そのページに記載されているURLを貼り付けることで地図を利用できます。</li>
+<li>下図は地図を貼り付けた例です。
+<img src="../resources/manual/importCityModels/mapExample.png" alt=""></li>
+<li>下図は陰影起伏図を貼り付けた例です。
+<img src="../resources/manual/importCityModels/mapLatitudeExample.png" alt=""></li>
+<li>URLには文字列 <code>{z}, {x}, {y}</code>を含めるようにしてください。これは地図タイルのxyz座標に変換されます。<ul>
+<li>地図タイルのxyz座標については<a href="https://maps.gsi.go.jp/development/siyou.html">国土地理院のページ</a>を参照してください。 </li>
+<li>SDKの機能により、土地の座標をもとに文字列<code>{z}, {x}, {y}</code>を適切な数値に置き換えて画像をダウンロードします。  </li>
+</ul>
+</li>
+<li><code>ズームレベル</code><ul>
+<li>地図タイルのズームレベルです。<ul>
+<li>数値が大きいほど高精細な画像になります。</li>
+<li>数値が1つ下がると、画素数が4分の1になります。</li>
+<li>ズームレベルは、地図タイルxyz座標のzの値に相当します。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>利用可能なズームレベルの検索</code><ul>
+<li>ボタンを押すと、現在入力されているURLでどのズームレベルが利用可能なのかを検索します。</li>
+<li>検索が完了すると、ズームレベルの入力欄がドロップダウンに変化し、利用可能なズームレベルから選択できるようになります。
+<img src="../resources/manual/importCityModels/zoomLevelSelect.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>この機能でダウンロードされた地図タイルは、自動で1枚の画像に結合され、土地のUVとマテリアルが設定されてインポートされます。</p>
+<h3 id="基準座標系からのオフセット値の設定">基準座標系からのオフセット値の設定</h3>
+<p>3Dモデルの原点をどこに置くかを指定します。<br>デフォルト値として、範囲選択画面で選択した範囲の中心が自動入力されるので、<br>このままの値でインポート可能です。<br>3Dモデルの原点位置を調整したい場合のみ値を編集してください。
+<img src="../resources/manual/importCityModels/referencePointConfig.png" alt=""><br><strong>値の意味:</strong><br>上のインポート設定で選択した「基準座標系」の原点から、<br>東西・南北・高さ方向にそれぞれ何メートルの地点を3Dモデルの原点とするかを表します。<br>基準座標系の原点は次の国土地理院のWebサイトで示されます:<br><a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">国土地理院のサイト</a></p>
+<h3 id="インポートの実行">インポートの実行</h3>
+<ul>
+<li><code>モデルをインポート</code>ボタンを押します。</li>
+<li>ウィンドウを下にスクロールすると、インポート処理の進捗が表示されます。
+<img src="../resources/manual/importCityModels/importProgressWindow.png" alt=""></li>
+<li>処理が進むと、都市のオブジェクトが順次シーンに配置されていきます。<br>進捗表示がすべて「完了」になったらインポート終了です。<br><img src="../resources/manual/importCityModels/importComplete.png" alt=""></li>
+</ul>
+<h3 id="インポートのキャンセル">インポートのキャンセル</h3>
+<ul>
+<li>インポート処理中に<code>インポートをキャンセルする</code>ボタンを押します。</li>
+<li>キャンセル処理中は、ボタンが<code>キャンセル中…</code>の表記に変わります。
+再度<code>モデルをインポート</code>ボタンが表示されたらキャンセル完了です。</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>インポートされた都市モデルは、このままプレハブ化するとメッシュとテクスチャが missing になってしまいます。<br>データはシーンに埋め込まれているためです。<br>「Assetsに保存」機能またはエクスポート機能を使ってテクスチャ等をファイルに書き出すことでプレハブ化できるようになります。</p>
+</div>
+<p>配置されたゲームオブジェクト階層のトップには、コンポーネント<code>PLATEAUInstancedCityModel</code> がアタッチされます。<br>このインスペクタから緯度、経度などの情報を確認できます。<br><img src="../resources/manual/importCityModels/InstancedCityModelInspector.png" alt=""></p>
+<h3 id="エラーログの確認">エラーログの確認</h3>
+<p>インポートの結果、計算状況ウィンドウの内容がすべて「完了」となれば良いですが、<br>ロードできなかったgmlファイルに関しては「失敗」と表示されます。<br>そのような場合でも、他のgmlファイルのロードが成功していれば、そのgmlに関しては正常にインポートされています。<br>失敗の場合は Unityのコンソールにエラーログが出力されます。</p>
+<h3 id="インポートされた3dモデルの保存先">インポートされた3Dモデルの保存先</h3>
+<p>インポートされた3Dモデルやテクスチャは、シーンファイルの中に直接保存されます。<br>これによるシーンファイルの肥大化を改善したい場合は、<br>モデル調整機能の「Assetsに保存」機能を利用してシーンからFBXに書き出すことができます。<br>詳しくは<a href="ModelAdjust.html#assetsに保存機能">こちら</a>をご覧ください。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CaffeeLake/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/ImportCityModels.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

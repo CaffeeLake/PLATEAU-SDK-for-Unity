@@ -1,0 +1,1644 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RnIntersection
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RnIntersection
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection">
+  
+  
+  <h1 id="PLATEAU_RoadNetwork_Structure_RnIntersection" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection" class="text-break">Class RnIntersection
+  </h1>
+  <div class="markdown level0 summary"><p>交差点</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html">ARnPartsBase</a></div>
+    <div class="level2"><a class="xref" href="PLATEAU.RoadNetwork.ARnParts-1.html">ARnParts</a>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a>&gt;</div>
+    <div class="level3"><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></div>
+    <div class="level4"><span class="xref">RnIntersection</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_ParentModel">RnRoadBase.ParentModel</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetGroupKeys">RnRoadBase.TargetGroupKeys</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans">RnRoadBase.TargetTrans</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_sideWalks">RnRoadBase.sideWalks</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_SideWalks">RnRoadBase.SideWalks</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_">RnRoadBase.AddSideWalk(RnSideWalk)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_System_Boolean_">RnRoadBase.RemoveSideWalk(RnSideWalk, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTarget_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_">RnRoadBase.AddTarget(PLATEAUCityObjectGroup, RnCityObjectGroupKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargets_IEnumerable_PLATEAUCityObjectGroup__IEnumerable_PLATEAU_RoadNetwork_RnCityObjectGroupKey__">RnRoadBase.AddTargets(IEnumerable&lt;PLATEAUCityObjectGroup&gt;, IEnumerable&lt;RnCityObjectGroupKey&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_UnLink_PLATEAU_RoadNetwork_Structure_RnRoadBase_">RnRoadBase.UnLink(RnRoadBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_MergeConnectedSideWalks">RnRoadBase.MergeConnectedSideWalks()</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_ClearTargets">RnRoadBase.ClearTargets()</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMyId">ARnPartsBase.DebugMyId</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMemo">ARnPartsBase.DebugMemo</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Structure.html">PLATEAU.RoadNetwork.Structure</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_RoadNetwork_Structure_RnIntersection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RnIntersection : RnRoadBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection__ctor" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.#ctor">RnIntersection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnIntersection()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection__ctor_IEnumerable_PLATEAUCityObjectGroup__IEnumerable_PLATEAU_RoadNetwork_RnCityObjectGroupKey__" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.#ctor(IEnumerable{PLATEAUCityObjectGroup},IEnumerable{PLATEAU.RoadNetwork.RnCityObjectGroupKey})">RnIntersection(IEnumerable&lt;PLATEAUCityObjectGroup&gt;, IEnumerable&lt;RnCityObjectGroupKey&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnIntersection(IEnumerable&lt;PLATEAUCityObjectGroup&gt; targetTrans, IEnumerable&lt;RnCityObjectGroupKey&gt; targetGroupKeys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td><span class="parametername">targetTrans</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a>&gt;</td>
+        <td><span class="parametername">targetGroupKeys</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection__ctor_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.#ctor(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey)">RnIntersection(PLATEAUCityObjectGroup, RnCityObjectGroupKey)</h4>
+  <div class="markdown level1 summary"><p>オリジナルのメッシュを含むPLATEAUCityObjectGroup, 自身が所属する主要地物キーを受け取るコンストラクタ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnIntersection(PLATEAUCityObjectGroup targetTran, RnCityObjectGroupKey groupKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PLATEAUCityObjectGroup</span></td>
+        <td><span class="parametername">targetTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">groupKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_Borders_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Borders*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_Borders" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Borders">Borders</h4>
+  <div class="markdown level1 summary"><p>他の道路との境界線Edge取得. edges.Where(e =&gt; e.IsBorder)と同義</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RnIntersectionEdge&gt; Borders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_Edges_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Edges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_Edges" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Edges">Edges</h4>
+  <div class="markdown level1 summary"><p>輪郭のEdge取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnIntersectionEdge&gt; Edges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_IsEmptyIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.IsEmptyIntersection*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_IsEmptyIntersection" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.IsEmptyIntersection">IsEmptyIntersection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmptyIntersection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_SignalController_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.SignalController*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_SignalController" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.SignalController">SignalController</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrafficSignalLightController SignalController { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.TrafficSignalLightController.html">TrafficSignalLightController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_Tracks_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Tracks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_Tracks" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Tracks">Tracks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnTrack&gt; Tracks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnTrack.html">RnTrack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_AddEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.AddEdge*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_AddEdge_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.AddEdge(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnWay)">AddEdge(RnRoadBase, RnWay)</h4>
+  <div class="markdown level1 summary"><p>隣接情報追加. borderがnullの場合は追加しない</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddEdge(RnRoadBase road, RnWay border)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">road</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">border</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_Align_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Align*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_Align" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Align">Align()</h4>
+  <div class="markdown level1 summary"><p>edgesの順番を整列する. 各Edgeが連結かつ時計回りになるように整列する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Align()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_AllWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.AllWays*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_AllWays" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.AllWays">AllWays()</h4>
+  <div class="markdown level1 summary"><p>所属するすべてのWayを取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;RnWay&gt; AllWays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AllWays">RnRoadBase.AllWays()</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_BuildTracks_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.BuildTracks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_BuildTracks_PLATEAU_RoadNetwork_Structure_BuildTrackOption_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.BuildTracks(PLATEAU.RoadNetwork.Structure.BuildTrackOption)">BuildTracks(BuildTrackOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildTracks(BuildTrackOption op = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.BuildTrackOption.html">BuildTrackOption</a></td>
+        <td><span class="parametername">op</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_Check_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Check*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_Check_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.Check(System.Boolean)">Check(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Check(bool showLog = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">showLog</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_Check_System_Boolean_">RnRoadBase.Check(Boolean)</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ClearTracks_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ClearTracks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ClearTracks" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ClearTracks">ClearTracks()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearTracks()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ContainTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ContainTrack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ContainTrack_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ContainTrack(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge,PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">ContainTrack(RnIntersectionEdge, RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainTrack(RnIntersectionEdge from, RnIntersectionEdge to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_CreateEmptyIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.CreateEmptyIntersection*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_CreateEmptyIntersection_List_PLATEAU_RoadNetwork_Structure_RnWay__PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnRoad_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.CreateEmptyIntersection(List{PLATEAU.RoadNetwork.Structure.RnWay},PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnRoad)">CreateEmptyIntersection(List&lt;RnWay&gt;, RnRoad, RnRoad)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RnIntersection CreateEmptyIntersection(List&lt;RnWay&gt; borderLeft2Right, RnRoad prev, RnRoad next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td><span class="parametername">borderLeft2Right</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_DisConnect_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.DisConnect*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_DisConnect_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.DisConnect(System.Boolean)">DisConnect(Boolean)</h4>
+  <div class="markdown level1 summary"><p>自身を切断する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DisConnect(bool removeFromModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeFromModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_DisConnect_System_Boolean_">RnRoadBase.DisConnect(Boolean)</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_FindTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.FindTrack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_FindTrack_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.FindTrack(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge,PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">FindTrack(RnIntersectionEdge, RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnTrack FindTrack(RnIntersectionEdge from, RnIntersectionEdge to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnTrack.html">RnTrack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetBorders_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetBorders*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetBorders" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetBorders">GetBorders()</h4>
+  <div class="markdown level1 summary"><p>隣接道路との境界線を取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;RnRoadBase.NeighborBorder&gt; GetBorders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.NeighborBorder.html">RnRoadBase.NeighborBorder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_GetBorders">RnRoadBase.GetBorders()</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetCenterPoint_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetCenterPoint*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetCenterPoint" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetCenterPoint">GetCenterPoint()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetCenterPoint()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetCentralVertex_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetCentralVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetCentralVertex" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetCentralVertex">GetCentralVertex()</h4>
+  <div class="markdown level1 summary"><p>デバッグ用) その道路の中心を表す代表頂点を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector3 GetCentralVertex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_GetCentralVertex">RnRoadBase.GetCentralVertex()</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeCenter_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeCenter*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeCenter_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeCenter(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">GetEdgeCenter(RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"><p>edgeの中心点取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetEdgeCenter(RnIntersectionEdge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeCenter2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeCenter2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeCenter2D_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeCenter2D(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">GetEdgeCenter2D(RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"><p>edgeの中心点(2D)取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetEdgeCenter2D(RnIntersectionEdge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeNormal_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeNormal*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeNormal_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeNormal(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">GetEdgeNormal(RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"><p>edgeの法線方向取得(外側を向いているはず)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetEdgeNormal(RnIntersectionEdge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeNormal2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeNormal2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetEdgeNormal2D_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetEdgeNormal2D(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">GetEdgeNormal2D(RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"><p>edgeの法線方向(2D)取得(外側を向いているはず)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetEdgeNormal2D(RnIntersectionEdge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetNeighborRoads_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetNeighborRoads*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_GetNeighborRoads" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.GetNeighborRoads">GetNeighborRoads()</h4>
+  <div class="markdown level1 summary"><p>隣接するRnRoadBaseを取得重複チェックはしていないので注意</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;RnRoadBase&gt; GetNeighborRoads()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_GetNeighborRoads">RnRoadBase.GetNeighborRoads()</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_IsAligned_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.IsAligned*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_IsAligned" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.IsAligned">IsAligned()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAligned()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_MergeContinuousNonBorderEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.MergeContinuousNonBorderEdge*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_MergeContinuousNonBorderEdge" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.MergeContinuousNonBorderEdge">MergeContinuousNonBorderEdge()</h4>
+  <div class="markdown level1 summary"><p>境界線以外のEdgeが連続している場合一つのEdgeにまとめる</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeContinuousNonBorderEdge()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveEdge*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveEdge_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLane_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveEdge(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLane)">RemoveEdge(RnRoad, RnLane)</h4>
+  <div class="markdown level1 summary"><p>road/laneに接続している隣接情報を削除する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEdge(RnRoad road, RnLane lane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">road</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLane.html">RnLane</a></td>
+        <td><span class="parametername">lane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveEdges_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveEdges_Func_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_System_Boolean__" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveEdges(Func{PLATEAU.RoadNetwork.Structure.RnIntersectionEdge,System.Boolean})">RemoveEdges(Func&lt;RnIntersectionEdge, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>predicateで指定した隣接情報を削除する.
+戻り値は削除された個数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveEdges(Func&lt;RnIntersectionEdge, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveEdges_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveEdges_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveEdges(PLATEAU.RoadNetwork.Structure.RnWay)">RemoveEdges(RnWay)</h4>
+  <div class="markdown level1 summary"><p>指定した境界線をエッジから削除する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveEdges(RnWay way)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">way</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveTrack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveTrack_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveTrack(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge,PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">RemoveTrack(RnIntersectionEdge, RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTrack(RnIntersectionEdge from, RnIntersectionEdge to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveTrack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveTrack_PLATEAU_RoadNetwork_Structure_RnTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveTrack(PLATEAU.RoadNetwork.Structure.RnTrack)">RemoveTrack(RnTrack)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTrack(RnTrack track)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnTrack.html">RnTrack</a></td>
+        <td><span class="parametername">track</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveTracks_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveTracks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_RemoveTracks_Predicate_PLATEAU_RoadNetwork_Structure_RnTrack__" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.RemoveTracks(Predicate{PLATEAU.RoadNetwork.Structure.RnTrack})">RemoveTracks(Predicate&lt;RnTrack&gt;)</h4>
+  <div class="markdown level1 summary"><p>指定した条件のトラックを削除する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTracks(Predicate&lt;RnTrack&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Predicate</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnTrack.html">RnTrack</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdgeLink_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdgeLink*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdgeLink_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdgeLink(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnRoadBase)">ReplaceEdgeLink(RnWay, RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>borderを持つEdgeの隣接道路情報をafterRoadに差し替える.
+戻り値は差し替えが行われた数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReplaceEdgeLink(RnWay border, RnRoadBase afterRoad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">border</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">afterRoad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdges_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdges_List_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge__" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdges(List{PLATEAU.RoadNetwork.Structure.RnIntersectionEdge})">ReplaceEdges(List&lt;RnIntersectionEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>edgesを差し替え
+afterEdgesは必ず連結している者とする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceEdges(List&lt;RnIntersectionEdge&gt; afterEdges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a>&gt;</td>
+        <td><span class="parametername">afterEdges</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdges_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdges_PLATEAU_RoadNetwork_Structure_RnRoad_List_PLATEAU_RoadNetwork_Structure_RnWay__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdges(PLATEAU.RoadNetwork.Structure.RnRoad,List{PLATEAU.RoadNetwork.Structure.RnWay},System.Boolean)">ReplaceEdges(RnRoad, List&lt;RnWay&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>roadとの境界線をbordersに置き換える</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceEdges(RnRoad road, List&lt;RnWay&gt; borders, bool reBuildTrack = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">road</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td><span class="parametername">borders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reBuildTrack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdges_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceEdges_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_List_PLATEAU_RoadNetwork_Structure_RnWay__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceEdges(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,List{PLATEAU.RoadNetwork.Structure.RnWay},System.Boolean)">ReplaceEdges(RnRoad, RnLaneBorderType, List&lt;RnWay&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>roadのborderTypeで指定した境界線を削除し, bordersを追加する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceEdges(RnRoad road, RnLaneBorderType borderType, List&lt;RnWay&gt; borders, bool reBuildTrack = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">road</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLaneBorderType.html">RnLaneBorderType</a></td>
+        <td><span class="parametername">borderType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td><span class="parametername">borders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reBuildTrack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceNeighbor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceNeighbor(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnRoadBase)">ReplaceNeighbor(RnRoadBase, RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>情報を直接書き換えるので呼び出し注意(相互に隣接情報を維持するように書き換える必要がある)
+隣接情報をfrom -&gt; toに変更する.
+(from/to側の隣接情報は変更しない)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ReplaceNeighbor(RnRoadBase from, RnRoadBase to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnRoadBase_">RnRoadBase.ReplaceNeighbor(RnRoadBase, RnRoadBase)</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceNeighbor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.ReplaceNeighbor(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnRoadBase)">ReplaceNeighbor(RnWay, RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>情報を直接書き換えるので呼び出し注意(相互に隣接情報を維持するように書き換える必要がある)
+borderWayで指定される境界線の隣接道路情報をtoに置き換える</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ReplaceNeighbor(RnWay borderWay, RnRoadBase to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">borderWay</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnRoadBase_">RnRoadBase.ReplaceNeighbor(RnWay, RnRoadBase)</a></div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_SeparateContinuousBorder_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.SeparateContinuousBorder*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_SeparateContinuousBorder" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.SeparateContinuousBorder">SeparateContinuousBorder()</h4>
+  <div class="markdown level1 summary"><p>必ず 境界線の間に輪郭線が来るように少し移動させて間に微小なEdgeを追加する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeparateContinuousBorder()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_SetIsEmptyIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.SetIsEmptyIntersection*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_SetIsEmptyIntersection_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.SetIsEmptyIntersection(System.Boolean)">SetIsEmptyIntersection(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsEmptyIntersection(bool val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_TryAddOrUpdateTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.TryAddOrUpdateTrack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_TryAddOrUpdateTrack_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.TryAddOrUpdateTrack(PLATEAU.RoadNetwork.Structure.RnIntersectionEdge,PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">TryAddOrUpdateTrack(RnIntersectionEdge, RnIntersectionEdge)</h4>
+  <div class="markdown level1 summary"><p>トラック情報を追加/更新する.
+同じfrom/toのトラックがすでにある場合は上書きする. そうでない場合は追加する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryAddOrUpdateTrack(RnIntersectionEdge from, RnIntersectionEdge to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersection_TryAddOrUpdateTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.TryAddOrUpdateTrack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersection_TryAddOrUpdateTrack_PLATEAU_RoadNetwork_Structure_RnTrack_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersection.TryAddOrUpdateTrack(PLATEAU.RoadNetwork.Structure.RnTrack)">TryAddOrUpdateTrack(RnTrack)</h4>
+  <div class="markdown level1 summary"><p>トラック情報を追加/更新する.
+同じfrom/toのトラックがすでにある場合は上書きする. そうでない場合は追加する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryAddOrUpdateTrack(RnTrack track)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnTrack.html">RnTrack</a></td>
+        <td><span class="parametername">track</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

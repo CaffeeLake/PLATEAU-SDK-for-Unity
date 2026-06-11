@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace PLATEAU.Native
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace PLATEAU.Native
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Native">
+  
+  <h1 id="PLATEAU_Native" data-uid="PLATEAU.Native" class="text-break">Namespace PLATEAU.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="PLATEAU.Native.DllLogger.html">DllLogger</a></h4>
+      <section><p>DLL側のログをC#側にコールバックで転送するクラスです。
+C#側でログを表示するためのコールバックメソッドとログ詳細度を指定できます。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.LogCallbacks.html">LogCallbacks</a></h4>
+      <section><p>DLL側のログをC#側でコールバックで受け取ることができますが、
+その Error, Warn, Info の3つのコールバックをまとめたクラスです。
+詳しくは <a class="xref" href="PLATEAU.Native.DllLogger.html">DllLogger</a> をご覧ください。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorBase-1.html">NativeVectorBase&lt;T&gt;</a></h4>
+      <section><p>C++側の vector を扱う基底クラスです。
+自動で Dispose したいときは <a class="xref" href="PLATEAU.Native.NativeVectorDisposableBase-1.html">NativeVectorDisposableBase&lt;T&gt;</a> を利用してください。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorDatasetMetadata.html">NativeVectorDatasetMetadata</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorDatasetMetadataGroup.html">NativeVectorDatasetMetadataGroup</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorDisposableBase-1.html">NativeVectorDisposableBase&lt;T&gt;</a></h4>
+      <section><p><a class="xref" href="PLATEAU.Native.NativeVectorBase-1.html">NativeVectorBase&lt;T&gt;</a> の自動で NativeDispose する版です。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorExtent.html">NativeVectorExtent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorGmlFile.html">NativeVectorGmlFile</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorGridCode.html">NativeVectorGridCode</a></h4>
+      <section><p>GridCodeのC++ Vectorです。
+中身はVectorの廃棄時に削除されます。
+ダングリングを防ぐため、vectorへの追加・参照時はコピーを渡します。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.PInvokeDisposable.html">PInvokeDisposable</a></h4>
+      <section><p>廃棄時に Native側で delete する必要があるものの基底クラスです。
+Native側で delete する処理として、 DisposeNative() がサブクラスで実装されていることを前提とします。
+廃棄タイミングは GC処理時 または using(var a){} ブロックを抜ける時 または Dispose() を呼んだときです。</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="PLATEAU.Native.Extent.html">Extent</a></h4>
+      <section><p>最小点と最大点の2点で表現される範囲であり、
+各点は緯度・経度・高さで表現されます。
+すなわち、2つの <a class="xref" href="PLATEAU.Native.GeoCoordinate.html">GeoCoordinate</a> からなる範囲表現です。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.GeoCoordinate.html">GeoCoordinate</a></h4>
+      <section><p>緯度・経度・高さで表現される座標です。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.PlateauQuaternion.html">PlateauQuaternion</a></h4>
+      <section><p>オブジェクトの向きを共通ライブラリとやりとりするためのクラスです。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Native.PlateauVector2d.html">PlateauVector2d</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.PlateauVector2f.html">PlateauVector2f</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.PlateauVector3d.html">PlateauVector3d</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.PlateauVector3f.html">PlateauVector3f</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="PLATEAU.Native.INativeVector-1.html">INativeVector&lt;T&gt;</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="PLATEAU.Native.DllLogLevel.html">DllLogLevel</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="PLATEAU.Native.LogCallbacks.LogCallbackFuncType.html">LogCallbacks.LogCallbackFuncType</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

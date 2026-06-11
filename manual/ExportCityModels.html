@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>3D&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="3D&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="3d都市モデルのエクスポート">3D都市モデルのエクスポート</h1>
+
+<p>配置された3D都市モデルを、FBX、OBJ、glTFとしてエクスポートできます。<br>このページではエクスポートの手順を説明します。</p>
+<h2 id="前提">前提</h2>
+<p>都市モデルがインポートされていることが前提です。<br>インポートの方法については <a href="ImportCityModels.html">都市モデルのインポート</a> をご覧ください。<br><img src="../resources/manual/exportCityModels/importedCity.png" alt=""></p>
+<h2 id="エクスポート手順">エクスポート手順</h2>
+<h3 id="エクスポート対象の指定">エクスポート対象の指定</h3>
+<ul>
+<li><p>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に3つのタブ「インポート、モデル調整、エクスポート、属性情報」があります。<br>このうちエクスポートを選択します。  </p>
+<p><img src="../resources/manual/exportCityModels/exportWindow.png" alt=""></p>
+</li>
+<li><p><code>選択オブジェクト</code> からエクスポート対象を選択します。調整対象として「シーンに配置されたオブジェクト」または「動的タイル」を選択できます。</p>
+<ul>
+<li>「シーンに配置されたオブジェクト」が対象の場合<ul>
+<li>対象として選択できるのはインポート時に生成されたゲームオブジェクトのうち、<br>親子関係における最上位のものです。</li>
+<li>親子関係の最上位には自動で <code>PLATEAUInstancedCityModel</code> コンポーネントが付与されています。<br>このコンポーネントを持つゲームオブジェクトが選択対象となります。</li>
+</ul>
+</li>
+<li>「動的タイル」が対象の場合<ul>
+<li>選択したPLATEAUTileManagerが保持する全タイルが対象となります。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>出力形式を選択します。<ul>
+<li>ファイル形式をFBX,OBJ,GLTFから選択できます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="出力オプションの設定">出力オプションの設定</h3>
+<p>オプションの設定項目について説明します。</p>
+<ul>
+<li><p><strong>GLTFフォーマット</strong></p>
+<ul>
+<li>出力形式がGLTFのときのみ表示される設定項目です。<br>フォーマットを次から選択します。</li>
+<li><strong>GLTF</strong><ul>
+<li>3Dモデル、テクスチャ、binファイルを別々のファイルとするフォーマットです。 </li>
+</ul>
+</li>
+<li><strong>GLB</strong><ul>
+<li>3Dモデルとその関連データをまとめて1つのファイルとするフォーマットです。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>テクスチャを含める</strong></p>
+<ul>
+<li>出力にテクスチャを含めるかどうかを設定します。チェックが付いていれば含みます。</li>
+</ul>
+</li>
+<li><p><strong>SDK付属のデフォルトテクスチャを含める</strong></p>
+<ul>
+<li>「テクスチャを含める」がオンのときのみ表示される設定項目です。</li>
+<li>オフの場合、PLATEAU SDK付属のデフォルトマテリアルがマテリアルなしに置き換わって出力されます。</li>
+<li>SDK付属のデフォルトマテリアルのテクスチャは、SDK付属のTriplanarシェーダーでのみ動作することを想定しています。<br>そのためデフォルトではオフとしています。</li>
+</ul>
+</li>
+<li><p><strong>非アクティブオブジェクトを含める</strong></p>
+<ul>
+<li>ヒエラルキー上で非アクティブになっているゲームオブジェクトを含めるかどうかを設定します。</li>
+<li>チェックが外れているとき、非アクティブなものを出力から除外します。</li>
+<li>ここでいう <code>非アクティブ</code> とは、下図のチェックマークが自身または親において外れており、<br>ヒエラルキービュー上で文字色が薄くなっている状態を指します。  </li>
+</ul>
+<p><img src="../resources/manual/exportCityModels/disabledObj.png" alt="">  </p>
+</li>
+<li><p><code>座標変換</code></p>
+<ul>
+<li>座標の基準点を設定します。</li>
+<li><p><code>Local</code> (ローカル) のとき:</p>
+<ul>
+<li>ポリゴンの座標は <code>PLATEAUInstancedCityModel</code> の位置を原点とした座標で表されます。<br><img src="../resources/manual/exportCityModels/exportLocalCoord.png" alt=""></li>
+</ul>
+</li>
+<li><p><code>Plane Cartesian</code> (直交座標系) のとき: </p>
+<ul>
+<li>ポリゴンの座標は、国土交通省が定める直交座標系のうち、インポート時に選択した直交座標系を原点とするよう平行移動されます。<br><img src="../resources/manual/exportCityModels/japanCoordinateSystem.png" alt=""><br>上図は <a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">国土地理院のWebサイト「わかりやすい平面直角座標系」</a> より引用<br>(原点マークは別途追記)</li>
+</ul>
+</li>
+<li>2つの使い分けについて<ul>
+<li>原点付近に3Dモデルが来るようにしたいときは Local</li>
+<li>原点から遠い位置に3Dモデルが配置されますが、複数の異なる都市をエクスポートするときに位置の整合性を取りたいときは Plane Cartesian が利用できます。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>座標軸</code></p>
+<ul>
+<li>選択したファイル形式がFBXまたはOBJの場合に表示されます。</li>
+<li>X,Y,Z軸の向きを決めます。利用したいアプリケーションに応じて選択してください。</li>
+<li>例えば、エクスポートしたファイルをUnityにインポートしたい場合は、Y軸が上を指す座標軸を選択してください。</li>
+<li>GLTF形式の場合は、仕様で座標軸が決まっているため、この設定項目は表示されません。</li>
+</ul>
+</li>
+<li><p><code>FBXフォーマット</code></p>
+<ul>
+<li>出力形式がFBXのときのみ表示される設定項目です。</li>
+<li>FBXを扱うご利用のソフトウェアに応じて選択してください。</li>
+<li>BlenderやUnityでご利用あればBinaryを推奨します。</li>
+</ul>
+</li>
+</ul>
+<h3 id="エクスポート">エクスポート</h3>
+<ul>
+<li>出力先のフォルダを指定します。</li>
+<li><code>エクスポート</code> ボタンを押してしばらく待ちます。</li>
+<li>正常終了の場合、指定のフォルダに3Dモデルファイルが出力され、そのフォルダが開きます。<br>異常終了の場合、ダイアログが表示されます。</li>
+</ul>
+<p><img src="../resources/manual/exportCityModels/tokyoBlender.png" alt=""><br>上図はエクスポートしたOBJファイルを Blender で読み込んだものです。</p>
+<h2 id="エクスポートの仕様">エクスポートの仕様</h2>
+<ul>
+<li>OBJファイルはそのフォーマットの仕様上、次の制約があります。  <ul>
+<li>オブジェクトが分割されず、1つのオブジェクトとして出力されます。<br>その代わり、頂点グループとしてオブジェクト内で領域分けされます。<br>例えば、Blenderの場合、インポート時に <code>頂点グループ</code> にチェックを入れると、図のように頂点グループが設定されます。<br><img src="../resources/manual/exportCityModels/blenderVertexGroup.png" alt=""></li>
+</ul>
+</li>
+<li>Unity内でのTransform情報（Position, Rotation, Scale）はエクスポートしたファイルに反映されます。<ul>
+<li>FBX,GLTFの場合は、ノードとしてUnityのPosition, Rotation, Scale および親子関係が反映されます。</li>
+<li>OBJの場合は、OBJの仕様上親子関係が反映されないため、頂点座標が直接Position, Rotation, Scaleにより変形されて出力されます。</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><strong>エクスポートした3Dモデルを再度Unityに取り込む場合</strong></p>
+<p><strong>・テクスチャと同時にインポート</strong><br>テクスチャ込みでエクスポートしたものを再度Unityにインポートする場合は、<br>3Dモデルファイルとそれに対応するテクスチャフォルダをエクスプローラー（Windowsの場合。Macの場合はFinder）から複数選択して<br>Unityのプロジェクトビューにドラッグ＆ドロップしてインポートしてください。<br>複数選択による同時インポートでないと、テクスチャが正しく適用されない場合があります。</p>
+<p><strong>・FBXのScale Factorは100にしてください</strong><br>FBXのインポート設定でScale Factorを100にすると正しい大きさになります。</p>
+</div>
+<div class="NOTE"><h5>Note</h5><p><strong>UVのない地物のテクスチャについて</strong><br>都市モデルにはUVのない地物が含まれる場合があります。<br>PLATEAU SDKでは、UVのない地物に対してはTriplanarシェーダーを使ったデフォルトマテリアルを使用することで見た目を構成しています。<br>これをエクスポートするとき、テクスチャは出力可能ですが、他の3DCGソフトで見た目を再現するには同じようにTriplanarシェーダーを使用する必要があります。</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CaffeeLake/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/ExportCityModels.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

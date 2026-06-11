@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#23646;&#24615;&#24773;&#22577;&#12395;&#12424;&#12387;&#12390;&#33394;&#20998;&#12369;&#12377;&#12427; | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#23646;&#24615;&#24773;&#22577;&#12395;&#12424;&#12387;&#12390;&#33394;&#20998;&#12369;&#12377;&#12427; | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="属性情報によって色分けする">属性情報によって色分けする</h1>
+
+<p><img src="../resources/manual/changeColorByAttrs/screenShot.png" alt="">
+上図は土地計画の区分を色分けするサンプルです。  </p>
+<p><img src="../resources/manual/changeColorByAttrs/screenShot2.png" alt="">
+上図は水害リスクを色分けするサンプルです。    </p>
+<p>このサンプルでは、土地計画決定情報および水害時の想定浸水高に関する属性情報を読み取り、それに応じてランタイムで色を変えます。  </p>
+<h2 id="サンプルを開く">サンプルを開く</h2>
+<p>このサンプルは次の場所にあります：<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesSample.unity</code><br>サンプルシーンを開き、Unityの再生ボタンを押すと地域ごとに色が付きます。<br>また、左上のボタンから色分けする区分を変更できます。<br>なお、実行には時間がかかる場合があります。</p>
+<p>属性情報を読み取り、色を変えるスクリプトは次の場所にあります:<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesColorSample.cs</code></p>
+<h2 id="サンプルコード">サンプルコード</h2>
+<h3 id="サンプルコード全文">サンプルコード全文</h3>
+<p>属性情報に応じて色分けするサンプルコード、<code>AttributesColorSample.cs</code>の内容は以下のとおりです。</p>
+<pre><code class="lang-csharp">using PLATEAU.CityInfo;
+using UnityEngine;
+
+/// &lt;summary&gt;
+/// ランタイムで、PLATEAUの属性情報に応じて色を分けるサンプルです。
+/// &lt;/summary&gt;
+public class AttributesColorSample : MonoBehaviour
+{
+    /// &lt;summary&gt; 色分けしたいターゲットを指定します。 &lt;/summary&gt;
+    [SerializeField] private Transform targetParent;
+    private void Awake()
+    {
+        // PLATEAUCityObjectGroupコンポーネントに属性情報が格納されており、ランタイムで読み込むことができます。
+        var cityObjGroups = targetParent.GetComponentsInChildren&lt;PLATEAUCityObjectGroup&gt;();
+        foreach(var cityObjGroup in cityObjGroups)
+        {
+            var target = cityObjGroup.transform;
+            foreach (var cityObj in cityObjGroup.GetAllCityObjects())
+            {
+                // 属性情報（キーバリューペアが集まったもの）を取得します。
+                var attributes = cityObj.AttributesMap;
+
+                // 属性情報のうち、土地計画上の区分を取得して色分けします。
+                if (attributes.TryGetValue(&quot;urf:function&quot;, out var landFuncAttr))
+                {
+                    string landFuncName = landFuncAttr.StringValue;
+                    var color = ColorByLandFuncName(landFuncName);
+                    ChangeMaterialByColor(target, color);
+                }
+
+                // 属性情報のうち、水害時の想定浸水高さを取得します。
+                if (attributes.TryGetValue(&quot;uro:floodingRiskAttribute&quot;, out var disasterRiskAttr))
+                {
+                    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:rank&quot;, out var depthValue))
+                    {
+                        var rank = depthValue.StringValue;
+                        var color = ColorByFloodingRank(rank);
+                        ChangeMaterialByColor(target, color);
+                    }
+                }
+
+            }
+        }
+    }
+
+    private Color ColorByLandFuncName(string landFuncName)
+    {
+        Color matColor = Color.white;
+
+        if (landFuncName.Contains(&quot;第1種住居地域&quot;))
+        {
+            matColor = new Color(0.1f, 0.8f, 0.1f);
+        }
+        else if (landFuncName.Contains(&quot;第2種住居地域&quot;))
+        {
+            matColor = new Color(0.3f, 0.7f, 0.9f);
+        }
+        else if (landFuncName.Contains(&quot;商業地域&quot;))
+        {
+            matColor = new Color(0.8f, 0.8f, 0.5f);
+        }
+        else if (landFuncName.Contains(&quot;高度地区&quot;))
+        {
+            matColor = new Color(0.8f, 0.5f, 0.5f);
+        }
+        else if (landFuncName.Contains(&quot;準工業地域&quot;))
+        {
+            matColor = new Color(0.8f, 0.5f, 0f);
+        }
+        else if (landFuncName.Contains(&quot;準防火地域&quot;))
+        {
+            matColor = new Color(0.9f, 0.1f, 0.4f);
+        }
+        else if (landFuncName.Contains(&quot;防火地域&quot;))
+        {
+            matColor = new Color(0.9f, 0.2f, 0.2f);
+        }
+
+        return matColor;
+    }
+
+    private Color ColorByFloodingRank(string rank)
+    {
+        Color matColor = Color.white;
+        if (rank == &quot;0.5m未満&quot;)
+        {
+            matColor = new Color(0f, 0f, 1f);
+        }
+        else if (rank == &quot;0.5m以上3m未満&quot;)
+        {
+            matColor = new Color(1.0f, 1.0f, 0f);
+        }
+        else if (rank == &quot;3m以上5m未満&quot;)
+        {
+            matColor = new Color(1.0f, 0f, 0f);
+        }
+
+        return matColor;
+    }
+
+    private void ChangeMaterialByColor(Transform target, Color color)
+    {
+        var meshRenderer = target.GetComponent&lt;MeshRenderer&gt;();
+        if (meshRenderer == null) return;
+        var material = new Material(meshRenderer.material)
+        {
+            color = color
+        };
+        meshRenderer.material = material;
+    }
+
+
+}
+
+</code></pre><h3 id="サンプルコード解説">サンプルコード解説</h3>
+<p>上のコードを解説します。<br>属性情報を取得するには、まず各地物ゲームオブジェクトに対してインポート時に付与される<code>PLATEAUCityObjectGroup</code>コンポーネントにアクセスします。</p>
+<pre><code class="lang-csharp">// コンポーネントにアクセスするところから始めます。
+var cityObjGroups = targetParent.GetComponentsInChildren&lt;PLATEAUCityObjectGroup&gt;();
+foreach(var cityObjGroup in cityObjGroups)
+{
+    // ここで各コンポーネントに保存されている属性情報にアクセスします。
+}
+</code></pre><p>コンポーネント内に地物に関する情報が保存されています。<br>インポート時に地域単位に設定した場合、<br>1つのコンポーネントの中に複数の地物情報(<code>CityObject</code>)が入っています。<br>主要地物単位、または最小地物単位の場合は<code>CityObject</code>は1つです。<br>いくつであっても、<code>cityObjectGroup.GetAllCityObjects()</code>で<code>CityObject</code>を取得できます。</p>
+<pre><code class="lang-csharp">foreach (var cityObj in cityObjGroup.GetAllCityObjects())
+{
+    // ここでCityObjectにアクセスします。
+}
+</code></pre><p><code>CityObject</code>から属性情報にアクセスしたり、地物型が何であるかを取得したりできます。</p>
+<pre><code class="lang-csharp">// 属性情報（キーバリューペアが集まったもの）を取得します。
+var attributes = cityObj.AttributesMap;
+</code></pre><p>属性情報はキーとバリューのペアが集まったものです。<br>バリューの型は、<code>String</code>型または入れ子の<code>AttributesMap</code>(キーバリューの組が集まったもの)<br>のどちらかであり、対応するgetterで値を取得できます。<br>なお、Double型など他の型のgetterもありますが、内部的には単にStringをパースしたものです。<br>下はString型の属性情報を取得する例です。</p>
+<pre><code class="lang-csharp">// 属性情報のうち、土地計画上の区分を取得して色分けします。
+if (attributes.TryGetValue(&quot;urf:function&quot;, out var landFuncAttr))
+{
+    string landFuncName = landFuncAttr.StringValue;
+    var color = // ここを&quot;第1種住居地域&quot;など属性情報の値に応じて場合分けで設定
+    ChangeMaterialByColor(target, color);
+}
+</code></pre><p>下は、属性情報が入れ子になっているパターン（バリューがキーバリューセットである）ときに値を取得する例です。<br><code>uro:floodingRiskAttribute</code>をキーとする入れ子で、キー<code>uro:rank</code>の値を取得しています。</p>
+<pre><code class="lang-csharp">// 属性情報のうち、水害時の想定浸水高さを取得します。
+if (attributes.TryGetValue(&quot;uro:floodingRiskAttribute&quot;, out var disasterRiskAttr))
+{
+    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:rank&quot;, out var depthValue))
+    {
+        var rank = depthValue.StringValue;
+        var color = ColorByFloodingRank(rank);
+        ChangeMaterialByColor(target, color);
+    }
+}
+</code></pre><p>属性値に応じてマテリアルのMainColorを変えることで、属性情報を可視化できます。</p>
+<pre><code class="lang-csharp">// マテリアルの色を変えます。
+private void ChangeMaterialByColor(Transform target, Color color)
+{
+    var meshRenderer = target.GetComponent&lt;MeshRenderer&gt;();
+    if (meshRenderer == null) return;
+    var material = new Material(meshRenderer.material)
+    {
+        color = color
+    };
+    meshRenderer.material = material;
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/CaffeeLake/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/ChangeColorByAttrs.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,752 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GeoGraphEx
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GeoGraphEx
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx">
+  
+  
+  <h1 id="PLATEAU_Util_GeoGraph_GeoGraphEx" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx" class="text-break">Class GeoGraphEx
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GeoGraphEx</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Util.GeoGraph.html">PLATEAU.Util.GeoGraph</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_Util_GeoGraph_GeoGraphEx_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GeoGraphEx</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetEdges_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetEdges*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetEdges__1_IEnumerable___0__System_Boolean_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetEdges``1(IEnumerable{``0},System.Boolean)">GetEdges&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>頂点verticesで構成される多角形の辺を返す. isLoop=trueの時は最後の用途と最初の要素を繋ぐ辺も返す
+Item1 : 始点, Item2 : 終点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Tuple&lt;T, T&gt;&gt; GetEdges&lt;T&gt;(IEnumerable&lt;T&gt; vertices, bool isLoop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLoop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Tuple</span>&lt;T, T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetInnerLerpSegments_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetInnerLerpSegments*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetInnerLerpSegments_IReadOnlyList_Vector3__IReadOnlyList_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_System_Single_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetInnerLerpSegments(IReadOnlyList{Vector3},IReadOnlyList{Vector3},PLATEAU.Util.GeoGraph.AxisPlane,System.Single,System.Single)">GetInnerLerpSegments(IReadOnlyList&lt;Vector3&gt;, IReadOnlyList&lt;Vector3&gt;, AxisPlane, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>selfの左右の道を横幅p : (1-p)で分割した線分を返す. p=[0,1]
+例) 0.5だと中央線が返る, 0だとLeftが返る, 1だとRightが返る. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; GetInnerLerpSegments(IReadOnlyList&lt;Vector3&gt; leftVertices, IReadOnlyList&lt;Vector3&gt; rightVertices, AxisPlane plane, float p, float checkMeter = 3F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">leftVertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">rightVertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.AxisPlane.html">AxisPlane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">checkMeter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetNeighborDistance2D_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetNeighborDistance2D*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetNeighborDistance2D_System_Int32_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetNeighborDistance2D(System.Int32)">GetNeighborDistance2D(Int32)</h4>
+  <div class="markdown level1 summary"><p>2次元のセル空間における, d近傍の距離を返す.
+GetNeighborDistance2D(1)の場合は, 3*3の正方形の距離を返す( x,yがそれぞれ -1~1の範囲)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2Int[] GetNeighborDistance2D(int d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2Int</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetNeighborDistance3D_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetNeighborDistance3D*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetNeighborDistance3D_System_Int32_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetNeighborDistance3D(System.Int32)">GetNeighborDistance3D(Int32)</h4>
+  <div class="markdown level1 summary"><p>3次元のセル空間における, d近傍の距離を返す.
+GetNeighborDistance3D(1)の場合は, 3<em>3</em>3の立方体の距離を返す( x,y,zがそれぞれ -1~1の範囲)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3Int[] GetNeighborDistance3D(int d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_IsCollinear_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.IsCollinear*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_IsCollinear_Vector3_Vector3_Vector3_System_Single_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.IsCollinear(Vector3,Vector3,Vector3,System.Single,System.Single)">IsCollinear(Vector3, Vector3, Vector3, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>a,b,cが同一直線上にあるかどうかを返す
+角度/距離の誤差を許容する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCollinear(Vector3 a, Vector3 b, Vector3 c, float degEpsilon = 0F, float midPointTolerance = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">degEpsilon</span></td>
+        <td><p>角度誤差(baとbcのなす角度が180±この値以内になるとき同一直線判定</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">midPointTolerance</span></td>
+        <td><p>線分abとbの距離がこれ以下なら同一直線判定</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_MergeMeshVertex_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.MergeMeshVertex*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_MergeMeshVertex_IList_Vector3__Dictionary_Vector3_Vector3__List_Vector3___List_System_Int32___" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.MergeMeshVertex(IList{Vector3},Dictionary{Vector3,Vector3},List{Vector3}@,List{System.Int32}@)">MergeMeshVertex(IList&lt;Vector3&gt;, Dictionary&lt;Vector3, Vector3&gt;, out List&lt;Vector3&gt;, out List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MergeMeshVertex(IList&lt;Vector3&gt; vertices, Dictionary&lt;Vector3, Vector3&gt; mergeMap, out List&lt;Vector3&gt; newVertices, out List&lt;int&gt; newVertexIndexMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">mergeMap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">newVertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">newVertexIndexMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>頂点のマージ処理が走ったかどうか</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_MergeVertices_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.MergeVertices*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_MergeVertices_IEnumerable_Vector3__System_Single_System_Int32_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.MergeVertices(IEnumerable{Vector3},System.Single,System.Int32)">MergeVertices(IEnumerable&lt;Vector3&gt;, Single, Int32)</h4>
+  <div class="markdown level1 summary"><p>点群verticesをセルサイズcellSizeでグリッド化し、頂点をまとめた結果を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;Vector3, Vector3&gt; MergeVertices(IEnumerable&lt;Vector3&gt; vertices, float cellSize = 0.1F, int mergeCellLength = 2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">cellSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mergeCellLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_MergeVertices2_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.MergeVertices2*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_MergeVertices2_IEnumerable_Vector3__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.MergeVertices2(IEnumerable{Vector3},System.Single)">MergeVertices2(IEnumerable&lt;Vector3&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>点群verticesをセルサイズcellSizeでグリッド化し、頂点をまとめた結果を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;Vector3, Vector3&gt; MergeVertices2(IEnumerable&lt;Vector3&gt; vertices, float cellSize = 0.1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">cellSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_SplitByCollinearSegment_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.SplitByCollinearSegment*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_SplitByCollinearSegment__1_IReadOnlyList___0__Func___0___0___0_List_System_Int32__System_Boolean__" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.SplitByCollinearSegment``1(IReadOnlyList{``0},Func{``0,``0,``0,List{System.Int32},System.Boolean})">SplitByCollinearSegment&lt;T&gt;(IReadOnlyList&lt;T&gt;, Func&lt;T, T, T, List&lt;Int32&gt;, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>verticesで表される線分を, isCollinearを使った同一直線判定でグルーピングする
+戻り値はグループの始点インデックス
+例) (v0, v1, v2, v3, v4, v5)
+v0~v1, v1~v5が同一直線なら[0, 2, 5]が返る
+v0~v5が同一直線なら[0, 5]が返る</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;int&gt; SplitByCollinearSegment&lt;T&gt;(IReadOnlyList&lt;T&gt; vertices, Func&lt;T, T, T, List&lt;int&gt;, bool&gt; isCollinear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, T, T, <span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isCollinear</span></td>
+        <td><p>頂点v0, v1, v2が同一直線となるか</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_SplitByCollinearSegment_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.SplitByCollinearSegment*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_SplitByCollinearSegment__1_IReadOnlyList___0__Func___0_Vector3__System_Single_System_Single_System_Boolean_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.SplitByCollinearSegment``1(IReadOnlyList{``0},Func{``0,Vector3},System.Single,System.Single,System.Boolean)">SplitByCollinearSegment&lt;T&gt;(IReadOnlyList&lt;T&gt;, Func&lt;T, Vector3&gt;, Single, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>verticesで表される線分を, toleranceAngleDeg/midPointToleranceを使った同一直線判定でグルーピングする
+戻り値はグループの始点インデックス
+例) (v0, v1, v2, v3, v4, v5)
+v0~v1, v1~v5が同一直線なら[0, 2, 5]が返る
+v0~v5が同一直線なら[0, 5]が返る</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;int&gt; SplitByCollinearSegment&lt;T&gt;(IReadOnlyList&lt;T&gt; vertices, Func&lt;T, Vector3&gt; toVec3, float toleranceAngleDeg, float midPointTolerance, bool checkAdjustSegmentAngleOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">toVec3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">toleranceAngleDeg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">midPointTolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">checkAdjustSegmentAngleOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

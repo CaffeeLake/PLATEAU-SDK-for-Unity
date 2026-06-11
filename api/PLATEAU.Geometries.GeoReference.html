@@ -1,0 +1,670 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GeoReference
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GeoReference
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Geometries.GeoReference">
+  
+  
+  <h1 id="PLATEAU_Geometries_GeoReference" data-uid="PLATEAU.Geometries.GeoReference" class="text-break">Class GeoReference
+  </h1>
+  <div class="markdown level0 summary"><p>極座標と平面直角座標を変換します。
+また座標変換の基準を保持します。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GeoReference</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Geometries.html">PLATEAU.Geometries</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_Geometries_GeoReference_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GeoReference : PInvokeDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_CoordinateSystem_" data-uid="PLATEAU.Geometries.GeoReference.CoordinateSystem*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_CoordinateSystem" data-uid="PLATEAU.Geometries.GeoReference.CoordinateSystem">CoordinateSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateSystem CoordinateSystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Geometries.CoordinateSystem.html">CoordinateSystem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ReferencePoint_" data-uid="PLATEAU.Geometries.GeoReference.ReferencePoint*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ReferencePoint" data-uid="PLATEAU.Geometries.GeoReference.ReferencePoint">ReferencePoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d ReferencePoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_UnitScale_" data-uid="PLATEAU.Geometries.GeoReference.UnitScale*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_UnitScale" data-uid="PLATEAU.Geometries.GeoReference.UnitScale">UnitScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float UnitScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ZoneID_" data-uid="PLATEAU.Geometries.GeoReference.ZoneID*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ZoneID" data-uid="PLATEAU.Geometries.GeoReference.ZoneID">ZoneID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ZoneID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ZoneIdExplanation_" data-uid="PLATEAU.Geometries.GeoReference.ZoneIdExplanation*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ZoneIdExplanation" data-uid="PLATEAU.Geometries.GeoReference.ZoneIdExplanation">ZoneIdExplanation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] ZoneIdExplanation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Convert_" data-uid="PLATEAU.Geometries.GeoReference.Convert*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Convert_PlateauVector3d_System_Boolean_System_Int32_" data-uid="PLATEAU.Geometries.GeoReference.Convert(PlateauVector3d,System.Boolean,System.Int32)">Convert(PlateauVector3d, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>指定されたEPSGコードを使用して座標変換を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d Convert(PlateauVector3d point, bool convertAxis, int epsg = 6697)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>変換する座標点</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">convertAxis</span></td>
+        <td><p>軸変換を行うかどうか</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">epsg</span></td>
+        <td><p>使用するEPSGコード。デフォルトは6697（日本測地系2011）</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><p>変換された座標点</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ConvertAxisFromENUTo_" data-uid="PLATEAU.Geometries.GeoReference.ConvertAxisFromENUTo*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ConvertAxisFromENUTo_PLATEAU_Geometries_CoordinateSystem_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.ConvertAxisFromENUTo(PLATEAU.Geometries.CoordinateSystem,PlateauVector3d)">ConvertAxisFromENUTo(CoordinateSystem, PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlateauVector3d ConvertAxisFromENUTo(CoordinateSystem axis, PlateauVector3d vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Geometries.CoordinateSystem.html">CoordinateSystem</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ConvertAxisToENU_" data-uid="PLATEAU.Geometries.GeoReference.ConvertAxisToENU*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ConvertAxisToENU_PLATEAU_Geometries_CoordinateSystem_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.ConvertAxisToENU(PLATEAU.Geometries.CoordinateSystem,PlateauVector3d)">ConvertAxisToENU(CoordinateSystem, PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlateauVector3d ConvertAxisToENU(CoordinateSystem axis, PlateauVector3d vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Geometries.CoordinateSystem.html">CoordinateSystem</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Create_" data-uid="PLATEAU.Geometries.GeoReference.Create*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Create_PlateauVector3d_System_Single_PLATEAU_Geometries_CoordinateSystem_System_Int32_" data-uid="PLATEAU.Geometries.GeoReference.Create(PlateauVector3d,System.Single,PLATEAU.Geometries.CoordinateSystem,System.Int32)">Create(PlateauVector3d, Single, CoordinateSystem, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeoReference Create(PlateauVector3d referencePoint, float unitScale, CoordinateSystem coordinateSystem, int zoneID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">referencePoint</span></td>
+        <td><p>平面直角座標に変換したあと、この座標が原点となるように並行移動します。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">unitScale</span></td>
+        <td><p>平面直角座標に変換したあと、拡大縮小します。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Geometries.CoordinateSystem.html">CoordinateSystem</a></td>
+        <td><span class="parametername">coordinateSystem</span></td>
+        <td><p>平面直角座標のX,Y,Z軸の向きを決めます。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">zoneID</span></td>
+        <td><p>国土交通省告示第九号に基づく平面直角座標系の原点の番号です。
+関東地方では 9 を選択すると歪みが少なくなりますが、
+この値を間違えても、ぱっと見ですぐ分かるような歪みにはなりません。
+詳しくはこちらを参照してください :
+<a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">https://www.gsi.go.jp/sokuchikijun/jpc.html</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Geometries.GeoReference.html">GeoReference</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_DisposeNative_" data-uid="PLATEAU.Geometries.GeoReference.DisposeNative*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_DisposeNative" data-uid="PLATEAU.Geometries.GeoReference.DisposeNative">DisposeNative()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeNative()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Finalize_" data-uid="PLATEAU.Geometries.GeoReference.Finalize*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Finalize" data-uid="PLATEAU.Geometries.GeoReference.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Project_" data-uid="PLATEAU.Geometries.GeoReference.Project*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Project_GeoCoordinate_" data-uid="PLATEAU.Geometries.GeoReference.Project(GeoCoordinate)">Project(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d Project(GeoCoordinate geoCoordinate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeoCoordinate</span></td>
+        <td><span class="parametername">geoCoordinate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Project_" data-uid="PLATEAU.Geometries.GeoReference.Project*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Project_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.Project(PlateauVector3d)">Project(PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d Project(PlateauVector3d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ProjectWithoutAxisConvert_" data-uid="PLATEAU.Geometries.GeoReference.ProjectWithoutAxisConvert*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ProjectWithoutAxisConvert_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.ProjectWithoutAxisConvert(PlateauVector3d)">ProjectWithoutAxisConvert(PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d ProjectWithoutAxisConvert(PlateauVector3d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Unproject_" data-uid="PLATEAU.Geometries.GeoReference.Unproject*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Unproject_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.Unproject(PlateauVector3d)">Unproject(PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate Unproject(PlateauVector3d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeoCoordinate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
